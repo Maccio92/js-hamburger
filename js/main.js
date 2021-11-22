@@ -18,3 +18,11 @@ barsIcon.addEventListener ('click' , function(){
 closeIcon.addEventListener ('click' , function(){
     menuHamb.classList.remove ("active");
 })
+
+// Bonus
+let newLi = document.createElement ("li");
+let newVoice = document.createElement ("a"); 
+let textVoice = document.createTextNode ("Contatti");
+newVoice.appendChild (textVoice);
+newLi.appendChild (newVoice);
+document.querySelector (".hamburger-menu ul").appendChild (newLi); 
